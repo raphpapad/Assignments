@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale = 1">
+        <meta name="Name" content="Raphael Papadakis">
+        <meta name="Description" content="HY359 A2_3">
+
+        <link rel="stylesheet" href="myStyle.css">
+        <link rel="icon" href="./images/Snakes_and_Ladders.jpg" type="image/x-icon">
+
+        <script src="initBoard.js"></script>
+        <script src="computer.js"></script>
+        <script src="game.js"></script>
+
+        <title>Snakes and Ladders - Online</title>
+    </head>
+
+    <header>
+		<h2 id="epikefalida">Snakes and Ladders CSD version</h2>
+	</header>
+
+    <button type="button" class="butn" onclick="editNames()">Give Player's name</button>
+
+    <body onload=initBoard()>
+        <table  id="mainTable"></table><br>
+        <button class="butn" id="button_move" onclick="changePosition()" onblur="updateGUI_innerHTML()">Move</button>
+        <button type="button" class="butn" id="button_newgame" onclick="newGame()">New Game</button>
+        <button type="button" class="butn" id="button_newgame" onclick="computer_plays()">Play with Computer</button>
+
+        <h4 id="up_zari">Roll the Dice</h4>
+        
+        <div class="info_box" id="message" style="background-color:#fffff0; border:solid black; border-color:#191970"></div>
+
+        <div id="zari" onclick="zari_arithmoi()">
+            <img src = "./ImagesDice/dice.gif" alt = "" id = "My_photo"></a>
+        </div>
+    </body>
+</html>

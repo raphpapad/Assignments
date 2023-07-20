@@ -1,0 +1,86 @@
+body { 
+    font-family: 'Verdana';
+}
+
+/*Eikona, onoma, eikona*/
+.header_page {
+    background-image: url(../images_other/header.png);
+}
+#logo{
+    width: 200px;
+    border-radius: 25%;
+}
+.logo {
+    margin-left: 30px;
+    margin-top: -5px;
+}
+
+/*epikefalida*/
+#epikefalida{
+    text-align: center;
+    margin-left: -150px;
+}
+
+/*Nav*/
+nav {
+    margin-top: 5px;
+}
+.nav_btn{
+    background-image: url(../images_other/footer_nav.png);
+}
+.btn{
+    margin-left: 100px;
+    color: aliceblue;
+}
+
+/*Aside aristera*/
+aside{
+    float: right;
+    margin-right: 100px;
+}
+
+/*Article, deksia*/
+article {
+    float: left;
+    margin-left: 80px;
+}
+
+/*checkbox*/
+.checkbox{
+    text-align: center;
+    margin-right: -1200px;
+}
+
+/*Register*/
+.signUpButton{
+    text-align: center;
+    margin-right: -1200px;
+}
+
+/*Footer background eikona, xrwma kai plirophories*/
+#down{
+    background-image: url(../images_other/footer_nav.png);
+    clear: both;
+	margin-bottom: 0;
+	margin-top: 40px;
+    height: 70px;
+    padding: 20px;
+}
+.Contact{
+    text-align: center;
+    color: aliceblue;
+}
+
+/*To * egine kokkino*/
+em{
+    color: red;
+}
+
+/*Hide pragmata*/
+.hidden {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+  }
