@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 /*Initialize the variables.*/
 const game = {
     // Player 1 plays first.
@@ -13,13 +13,13 @@ const game = {
     countvicories2: 0,
     // No victor yet.
     winner: false,
-	BoolStart: false,
-	CounterForStart: 0
+    BoolStart: false,
+    CounterForStart: 0
 };
 
 /*Reset the below elemnts acording to const game.*/
 function newGame() {
-    game.moves1 = 0;
+	game.moves1 = 0;
 	game.moves2 = 0;
 	
 	game.cells[0]=[null,null,null,null,null,null,null];
