@@ -21,11 +21,11 @@ import java.awt.geom.QuadCurve2D;
  * Example:
  * If L = 5, rows = 5 and columns = 4.
  * 
- * 		*	*
- * 		*	*
+ * 		*   *
+ * 		*   *
  * 		*****
- * 		*	*
- * 		*	*
+ * 		*   *
+ * 		*   *
  * 
  */
 
@@ -127,7 +127,7 @@ public class DrawH {
 	
 	public static void main(String[] args) {
 		Scanner user = new Scanner(System.in);		
-		// M can have 4 values ‘c’ (from console), ‘w’ (from window), ‘f’ (from file), ‘g’ (from graphics).		
+		// M can have 4 values â€˜câ€™ (from console), â€˜wâ€™ (from window), â€˜fâ€™ (from file), â€˜gâ€™ (from graphics).		
 		char  M;
 		// L can have values from 3 to 20.
 		int L = 0;
