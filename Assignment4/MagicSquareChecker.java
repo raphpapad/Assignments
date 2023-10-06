@@ -23,18 +23,18 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class MagicSquareChecker {
-	public static int n = 0;													// N is the number of the table. If n = 3 then the table is n * n = 9 (3 rows, 3 columns).
-	public static ArrayList<Integer> sumrow = new ArrayList<Integer>(); 		// I add the sum of each row.
-	public static ArrayList<Integer> sumcol = new ArrayList<Integer>(); 		// I add the sum of each column.
+	public static int n = 0;										// N is the number of the table. If n = 3 then the table is n * n = 9 (3 rows, 3 columns).
+	public static ArrayList<Integer> sumrow = new ArrayList<Integer>(); 					// I add the sum of each row.
+	public static ArrayList<Integer> sumcol = new ArrayList<Integer>(); 					// I add the sum of each column.
 	
 	// For each row calculate the sum. Then we want all the rows to have the same sum. 
 	private static int sumOfRow (int[][] s, int k) {		
 		int countersum = 0;
 		for(int i=0; i<n; i++) {
-			countersum = countersum + s[k][i]; 									// Counts the sum of rows.
+			countersum = countersum + s[k][i]; 								// Counts the sum of rows.
 		}		
 		
-		sumrow.add(countersum); 												// Add the sum of row to the array list.
+		sumrow.add(countersum); 										// Add the sum of row to the array list.
 		boolean match = false; 
 		if(sumrow.get(k) == sumrow.get(0)) { 									// Check if each sum is equal with the first sum.
 			match = true; 
@@ -43,21 +43,21 @@ public class MagicSquareChecker {
 			match = false;
 		}		
 				
-		if(match == false) { 													// If the sum of each row is not equal among them then return 0.
+		if(match == false) { 											// If the sum of each row is not equal among them then return 0.
 			return 0;				
 		}
 		
-		return countersum; 														// If the sum of each row is equal among them then return the number.			
+		return countersum; 											// If the sum of each row is equal among them then return the number.			
 	}
 	
 	// For each column calculate the sum. Then we want all the columns to have the same sum. 
 	private static int sumOfColumn (int[][] s, int k) {
 		int countersum = 0;
 		for(int i=0; i<n; i++) {
-			countersum = countersum + s[i][k]; 									// Counts the sum of columns.
+			countersum = countersum + s[i][k]; 								// Counts the sum of columns.
 		}
 		
-		sumcol.add(countersum); 												// Add the sum of column to the array list.
+		sumcol.add(countersum); 										// Add the sum of column to the array list.
 		boolean match = false;
 		for(int i=0; i<=k; i++) {			
 			if(sumcol.get(k) == sumcol.get(0)) { 								// Check if each sum is equal with the first sum.
@@ -68,11 +68,11 @@ public class MagicSquareChecker {
 			}
 		}
 		
-		if(match == false) { 													// If the sum of each column is not equal among them then return 0.
+		if(match == false) { 											// If the sum of each column is not equal among them then return 0.
 			return 0;				
 		}
 		
-		return countersum;														// If the sum of each column is equal among them then return the number.	
+		return countersum;											// If the sum of each column is equal among them then return the number.	
 	}
 	
 	// For the first diagonal calculate the sum.
@@ -80,7 +80,7 @@ public class MagicSquareChecker {
 		int countersum = 0; 
 		
 		for(int j=0; j<n; j++) {
-			countersum = countersum + s[j][j]; 									// Calculate the diagonal [0][0] + [1][1] + [2][2]
+			countersum = countersum + s[j][j]; 								// Calculate the diagonal [0][0] + [1][1] + [2][2]
 		}
 		
 		return countersum;		
@@ -89,7 +89,7 @@ public class MagicSquareChecker {
 	// For the second diagonal calculate the sum.
 	private static int sumOfDiagonal2 (int[][] s) {
 		int countersum = 0;
-		int k = 0;																// The second diagonal is reversed show I start with row zero.
+		int k = 0;												// The second diagonal is reversed show I start with row zero.
 		
 		for(int j=1; j<=n; j++) {
 			countersum = countersum + s[k][n-j];								// Because it's reversed I have (if n=3) [0][3-1] -> [0][2] ...
@@ -103,7 +103,7 @@ public class MagicSquareChecker {
 	public static boolean checkIsMagic(int[][] s) {
 		int result1 = 0;
 		int result2 = 0;
-																				// Call the methods.
+															// Call the methods.
 		for(int i=0; i<n; i++) {
 			result1 = sumOfRow(s, i); 
 			result2 = sumOfColumn(s, i);
@@ -112,7 +112,7 @@ public class MagicSquareChecker {
 		int result3 = sumOfDiagonal1(s);
 		int result4 = sumOfDiagonal2(s);
 																						
-		if(result1 == result2 && result1 == result3 && result1 == result4) {	// If all results are equal then the table is a magic box.
+		if(result1 == result2 && result1 == result3 && result1 == result4) {					// If all results are equal then the table is a magic box.
 			return true;
 		}
 		
@@ -121,17 +121,17 @@ public class MagicSquareChecker {
 	
 	// Get the magic number.
 	public static int getMagicNumber(int[][] s) {
-		int result = sumOfDiagonal1(s);											// If the table is a magic box then we take whatever result we want.
+		int result = sumOfDiagonal1(s);										// If the table is a magic box then we take whatever result we want.
 		return result;
 	}
 	
 	// Check if the table has duplicate numbers.
 	private static boolean hasDuplicates(int[][] s) {
-		for(int i=0; i<n; i++) {												// Two fors because the table is a 2d. 
+		for(int i=0; i<n; i++) {										// Two fors because the table is a 2d. 
 			for(int j=0; j<n; j++) {
-				int num = s[i][j];												// Store the number in num variable.
-	            for (int otherCol = j+1; otherCol < s.length; otherCol++) {		// Another for in order to check if the num is equal with the next numbers of the row 
-	                if (num == s[j][otherCol]) {								// num == [0][1], [0][2] .....
+				int num = s[i][j];									// Store the number in num variable.
+	            for (int otherCol = j+1; otherCol < s.length; otherCol++) {						// Another for in order to check if the num is equal with the next numbers of the row 
+	                if (num == s[j][otherCol]) {									// num == [0][1], [0][2] .....
 	                    return true;											
 	                }
 	            }
@@ -144,7 +144,7 @@ public class MagicSquareChecker {
 	public static void main(String[] args) {		
 		@SuppressWarnings("resource")
 		Scanner user = new Scanner(System.in);
-		ArrayList<Integer> numbers = new ArrayList<Integer>(9);					// We want n to be from 2 to 10, so I created a Array List to check if n is equal to those numbers.
+		ArrayList<Integer> numbers = new ArrayList<Integer>(9);							// We want n to be from 2 to 10, so I created a Array List to check if n is equal to those numbers.
 			numbers.add(2);
 			numbers.add(3);
 		    numbers.add(4);
@@ -161,15 +161,15 @@ public class MagicSquareChecker {
 		boolean retval = numbers.contains(n);									// Check if n is equal to with a number of the Array List. If yes then retval = true. 		
 		while(retval == false) {
 			System.out.println("Wrong input n must be from 2 to 10. Give n again:");
-			n = user.nextInt();													// If retval = false then give me again again the n value until is equal with the numbers of the Array List.
-			retval = numbers.contains(n);										// Check if n is equal to with a number of the Array List. If yes then retval = true.
+			n = user.nextInt();										// If retval = false then give me again again the n value until is equal with the numbers of the Array List.
+			retval = numbers.contains(n);									// Check if n is equal to with a number of the Array List. If yes then retval = true.
 		}
 		
-		int[][] array = new int[n][n];											// Creating the 2d array.
+		int[][] array = new int[n][n];										// Creating the 2d array.
 		for(int i=0; i<n; i++) {
 			for(int j=0; j<n; j++) {
 				System.out.println("Give me a number:");						
-				array[i][j] = user.nextInt();									// Give numbers to the array.
+				array[i][j] = user.nextInt();								// Give numbers to the array.
 			}
 		}
 		
@@ -180,7 +180,7 @@ public class MagicSquareChecker {
 		 *  
 		 */
 		for(int i=0; i<n*n; i++) {
-			System.out.print("-");												// Print the table. 
+			System.out.print("-");											// Print the table. 
 		}
 				
 		for(int i=0; i<n; i++) {												
@@ -194,15 +194,15 @@ public class MagicSquareChecker {
 		
 		System.out.println();
 		for(int i=0; i<n*n; i++) {
-			System.out.print("-");												// Print the table.
+			System.out.print("-");											// Print the table.
 		}
 		System.out.println();
 		
-		boolean magicbox = checkIsMagic(array);									// Check if table is magic.
-		boolean duplicate = hasDuplicates(array);								// Check if the tables have duplicate numbers.
+		boolean magicbox = checkIsMagic(array);										// Check if table is magic.
+		boolean duplicate = hasDuplicates(array);									// Check if the tables have duplicate numbers.
 		int magicnumber = 0;													
 		
-		if(magicbox == true && duplicate == false) {							// If it is a magic box and has no duplicates then print the table and the magic number.
+		if(magicbox == true && duplicate == false) {									// If it is a magic box and has no duplicates then print the table and the magic number.
 			magicnumber = getMagicNumber(array);			
 			System.out.println("This is a magic box and the magic number is "+magicnumber+".");
 		}
