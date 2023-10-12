@@ -1,7 +1,5 @@
 # Assignments
 
-Languages: HTML, CSS, Javascript, Java, C.<br>
-
 << Java >><br>
 Assignment4: Create a magic box (more information inside the code with comments).<br>
 Assignment5: Draw letter H (more information inside the code with comments).<br>
