@@ -1,0 +1,306 @@
+body{
+    width: 1200px;
+    height: 800px;
+    background-color:#f1f1f1;
+    Font-family: Arial;
+}
+/*------------------Header------------------*/
+header{
+    background-color: white;
+}
+/*Youtube*/
+#icon0{
+    height: 100px;
+}
+/*Search Bar*/
+#icon1{
+    vertical-align: top;
+    margin-top: 30px;
+    margin-left: 210px;
+    width: 400px;
+    height: 30px;
+}
+/*Search buttom*/
+#icon2{
+    vertical-align: top;
+    margin-top: 30px;
+    width: 30px;
+    height: 30px;
+}
+/*Avatar*/
+#icon3{
+    float:right;
+    margin-top: 10px;
+    margin-right: 10px;
+    height: 50px;
+    border-radius: 50%;
+}
+/*Avatar gia to profil*/
+#icon4{
+    float:right;
+    margin-top: 67px;
+    margin-right: 80px;
+    height: 50px;
+    border-radius: 50%;
+}
+/*Profil name*/
+#profil_name{
+    float: right;
+    margin-right: -122px;
+    margin-top: 84px;
+}
+/*-------Epiloges porfil-------*/
+#outset0{
+    width: 190px;
+    height: 18px;
+    border-style: outset;
+    text-align: center;
+    background-color: white;
+    right: 710px;
+    top: 109px;
+    position:absolute;
+    z-index: 1;
+}
+#outset1{
+    width: 190px;
+    height: 18px;
+    border-style: outset;
+    text-align: center;
+    background-color: white;
+    right: 710px;
+    top: 129px;
+    position:absolute;
+    z-index: 1;
+}
+#outset2{
+    width: 190px;
+    height: 18px;
+    border-style: outset;
+    text-align: center;
+    background-color: white;
+    right: 710px;
+    top: 149px;
+    position:absolute;
+    z-index: 1;
+}
+#outset3{
+    width: 190px;
+    height: 18px;
+    border-style: outset;
+    text-align: center;
+    background-color: white;
+    right: 710px;
+    top: 169px;
+    position:absolute;
+    z-index: 1;
+}
+#outset4{
+    width: 190px;
+    height: 18px;
+    border-style: outset;
+    text-align: center;
+    background-color: white;
+    right: 710px;
+    top: 189px;
+    position:absolute;
+    z-index: 1;
+}
+/*------------------Main------------------*/
+/*Video*/
+#Embed_Video{
+    margin-top: 10px;
+    margin-left: 30px;
+}
+/*----------epikefalida kai views tou binteo----------*/
+#heading01{
+    margin-top: 15px;
+    margin-left: 30px;
+}
+#heading02{
+    margin-top: -4px;
+    margin-left: 30px;
+    color: gray;
+}
+#heading11{
+    margin-top: 15px;
+    margin-left: 30px;
+}
+#heading12{
+    margin-top: -4px;
+    margin-left: 30px;
+    color: gray;
+}
+#heading21{
+    margin-top: 15px;
+    margin-left: 30px;
+}
+#heading22{
+    margin-top: -4px;
+    margin-left: 30px;
+    color: gray;
+}
+#heading31{
+    margin-top: 15px;
+    margin-left: 30px;
+}
+#heading32{
+    margin-top: -4px;
+    margin-left: 30px;
+    color: gray;
+}
+#heading31{
+    margin-top: 15px;
+    margin-left: 30px;
+}
+#heading32{
+    margin-top: -4px;
+    margin-left: 30px;
+    color: gray;
+}
+#heading41{
+    margin-top: 15px;
+    margin-left: 30px;
+}
+#heading42{
+    margin-top: -4px;
+    margin-left: 30px;
+    color: gray;
+}
+#heading51{
+    margin-top: 15px;
+    margin-left: 30px;
+}
+#heading52{
+    margin-top: -4px;
+    margin-left: 30px;
+    color: gray;
+}
+#heading61{
+    margin-top: 15px;
+    margin-left: 30px;
+}
+#heading62{
+    margin-top: -4px;
+    margin-left: 30px;
+    color: gray;
+}
+/*------------------Aside------------------*/
+/*Heading*/
+#heading0{
+    margin-left: 890px;
+    margin-top: -670px;
+}
+/*Ice age Icons*/
+#text_ice_age{
+    margin-left: 1080px;
+    margin-top: -380px;
+}
+#text02{
+    margin-top: 90px;
+}
+#text04{
+    margin-top: 90px;
+}
+/*Ice Age 2*/
+#ice_icon0{
+    width: 150px;
+    height: 80px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+div#iceage2{
+    background-color:white;
+    margin-left: 890px;
+    margin-top: 20px;
+    width: 280px;
+    height: 120px;
+}
+/*Ice Age 3*/
+#ice_icon1{
+    width: 150px;
+    height: 80px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+div#iceage3{
+    background-color:white;
+    margin-left: 890px;
+    margin-top: 20px;
+    width: 280px;
+    height: 120px;
+}
+/*Ice Age 4*/
+#ice_icon2{
+    width: 150px;
+    height: 80px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+div#iceage4{
+    background-color:white;
+    margin-left: 890px;
+    margin-top: 20px;
+    width: 280px;
+    height: 120px;
+}
+/*Matrix Icons*/
+#text_matrix{
+    margin-left: 1080px;
+    margin-top: -380px;
+}
+#text12{
+    margin-top: 90px;
+}
+#text14{
+    margin-top: 90px;
+}
+/*Matrix 1*/
+#matrix_icon0{
+    width: 150px;
+    height: 80px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+div#matrix1{
+    background-color:white;
+    margin-left: 890px;
+    margin-top: 20px;
+    width: 280px;
+    height: 120px;
+}
+/*Matrix 2*/
+#matrix_icon1{
+    width: 150px;
+    height: 80px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+div#matrix2{
+    background-color:white;
+    margin-left: 890px;
+    margin-top: 20px;
+    width: 280px;
+    height: 120px;
+}
+/*Matrix 3*/
+#matrix_icon2{
+    width: 150px;
+    height: 80px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+div#matrix3{
+    background-color:white;
+    margin-left: 890px;
+    margin-top: 20px;
+    width: 280px;
+    height: 120px;
+}
+/*Hide pragmata*/
+.hidden {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+  }

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale = 1">
+        <meta name="Name" content="Raphael Papadakis">
+        <meta name="Description" content="MEM 331 Assignment 1">
+
+        <link rel="stylesheet" href="./css/A2_331.css">
+        <link rel="icon" href="./images/youtube.png" type="image/x-icon">
+		
+		<title>Ice Age 1 - Youtube</title>
+    </head>
+
+    <body>
+        <header>
+            <span class="header_icon">
+                <a href="https://www.youtube.com/"> <img src="./images/logo.png" alt="" id="icon0"></a>
+                <input type="text" placeholder="Search" id="icon1" pattern="[A-Za-z]">
+                <img src="./images/search.png" alt="" id="icon2" onclick="visibility()">
+                <img src="./images/avatar.jpg" alt="" id="icon3" onclick="profil()">
+                <img src="./images/avatar.jpg" alt="" id="icon4" class="hidden">
+                <p id="profil_name" class="hidden">John Doe</p>
+                <p id="outset0" class="hidden" onclick="alert('Your Channel');">Your Channel</p>
+                <p id="outset1" class="hidden" onclick="alert('Purchaces');">Purchaces</p>
+                <p id="outset2" class="hidden" onclick="alert('Switch Account');">Switch Account</p>
+                <p id="outset3" class="hidden" onclick="alert('Settings');">Settings</p>
+                <p id="outset4" class="hidden" onclick="alert('Help');">Help</p> 
+            </span>
+        </header>
+
+        <article>
+            <div id="Embed_Video"> 
+                <iframe width="800" height="600" src="https://www.youtube.com/embed/vOWHDQU46NU" frameborder="0"></iframe>
+            </div>
+
+            <div>
+                <h4 id="heading01"><b>Ice Age 1</b></h4>
+                <p id="heading02">1000 views</p>
+                <h4 id="heading11" class="hidden"><b>Ice Age 2</b></h4>
+                <p id="heading12" class="hidden">150 views</p>
+                <h4 id="heading21" class="hidden"><b>Ice Age 3</b></h4>
+                <p id="heading22" class="hidden">2000 views</p>
+                <h4 id="heading31" class="hidden"><b>Ice Age 4</b></h4>
+                <p id="heading32" class="hidden">432 views</p>
+                <h4 id="heading41" class="hidden"><b>Matrix 1</b></h4>
+                <p id="heading42" class="hidden">5620 views</p>
+                <h4 id="heading51" class="hidden"><b>Matrix 2</b></h4>
+                <p id="heading52" class="hidden">3040 views</p>
+                <h4 id="heading61" class="hidden"><b>Matrix 3</b></h4>
+                <p id="heading62" class="hidden">2020 views</p>
+            </div> 
+        </article>
+
+        <aside>
+            <h2 id="heading0"><b>Related videos</b></h2>
+
+            <div id="iceage2" onclick="views0()">
+                <img src="./images/ice_age2.jpg" alt="" id="ice_icon0">
+            </div>
+
+            <div id="iceage3" onclick="views1()">
+                <img src="./images/ice_age3.jpg" alt="" id="ice_icon1">
+            </div>
+
+            <div id="iceage4" onclick="views2()">
+                <img src="./images/ice_age4.jpg" alt="" id="ice_icon2">
+            </div>
+
+            <div id="text_ice_age">
+                <p id="text00" onclick="views0()"><b>Ice Age 2</b></p>
+                <p id="text01" onclick="views0()" style="color:gray">150 views</p>
+                <p id="text02" onclick="views1()"><b>Ice Age 3</b></p>
+                <p id="text03" onclick="views1()" style="color:gray">2000 views</p>
+                <p id="text04" onclick="views2()"><b>Ice Age 4</b></p>
+                <p id="text05" onclick="views2()" style="color:gray">432 views</p>
+            </div>
+
+            <div id="matrix1" class="hidden" onclick="views3()">
+                <img src="./images/matrix1.jpg" alt="" id="matrix_icon0">
+            </div>
+
+            <div id="matrix2" class="hidden" onclick="views4()">
+               <img src="./images/matrix2.jpg" alt="" id="matrix_icon1">
+            </div>
+
+            <div id="matrix3" class="hidden" onclick="views5()">
+                <img src="./images/matrix3.jpg" alt="" id="matrix_icon2">
+            </div>
+
+            <div id="text_matrix" class="hidden"> 
+                <p id="text10" onclick="views3()"><b>Matrix 1</b></p>
+                <p id="text11" onclick="views3()" style="color:gray">5620 views</p>
+                <p id="text12" onclick="views4()"><b>Matrix 2</b></p>
+                <p id="text13" onclick="views4()" style="color:gray">3040 views</p>
+                <p id="text14" onclick="views5()"><b>Matrix 3</b></p>
+                <p id="text15" onclick="views5()" style="color:gray">2020 views</p>
+            </div>
+        </aside>
+    </body>
+
+    <script>
+        function visibility() {
+            var x=document.getElementById("icon1").value;
+
+            if(x==="matrix"){
+                document.getElementById("iceage2").classList.add("hidden");
+                document.getElementById("iceage3").classList.add("hidden");
+                document.getElementById("iceage4").classList.add("hidden");
+                document.getElementById("text_ice_age").classList.add("hidden");
+                document.getElementById("matrix1").classList.remove("hidden");
+                document.getElementById("matrix2").classList.remove("hidden");
+                document.getElementById("matrix3").classList.remove("hidden");
+                document.getElementById("text_matrix").classList.remove("hidden");
+            }
+            else if(x==="ice age"){
+                document.getElementById("matrix1").classList.add("hidden");
+                document.getElementById("matrix2").classList.add("hidden");
+                document.getElementById("matrix3").classList.add("hidden");
+                document.getElementById("text_matrix").classList.add("hidden");
+                document.getElementById("iceage2").classList.remove("hidden");
+                document.getElementById("iceage3").classList.remove("hidden");
+                document.getElementById("iceage4").classList.remove("hidden");
+                document.getElementById("text_ice_age").classList.remove("hidden");
+            }
+            else{
+                alert("No results found");
+            }
+        }
+        function profil(){
+            document.getElementById("icon4").classList.toggle("hidden");
+            document.getElementById("profil_name").classList.toggle("hidden");
+            document.getElementById("outset0").classList.toggle("hidden");
+            document.getElementById("outset1").classList.toggle("hidden");
+            document.getElementById("outset2").classList.toggle("hidden");
+            document.getElementById("outset3").classList.toggle("hidden");
+            document.getElementById("outset4").classList.toggle("hidden");
+        }
+        function views0(){
+            document.querySelector('#Embed_Video > iframe').src=`https://www.youtube.com/embed/WHe9fY3K314`;
+            document.getElementById("heading11").classList.remove("hidden");
+            document.getElementById("heading12").classList.remove("hidden");
+            document.getElementById("heading01").classList.add("hidden");
+            document.getElementById("heading02").classList.add("hidden");
+            document.getElementById("heading21").classList.add("hidden");
+            document.getElementById("heading22").classList.add("hidden");
+            document.getElementById("heading31").classList.add("hidden");
+            document.getElementById("heading32").classList.add("hidden");
+            document.getElementById("heading41").classList.add("hidden");
+            document.getElementById("heading42").classList.add("hidden");
+            document.getElementById("heading51").classList.add("hidden");
+            document.getElementById("heading52").classList.add("hidden");
+            document.getElementById("heading61").classList.add("hidden");
+            document.getElementById("heading62").classList.add("hidden");
+        }
+        function views1(){
+            document.querySelector('#Embed_Video > iframe').src=`https://www.youtube.com/embed/WUpSXOA6xiY`;
+            document.getElementById("heading11").classList.add("hidden");
+            document.getElementById("heading12").classList.add("hidden");
+            document.getElementById("heading01").classList.add("hidden");
+            document.getElementById("heading02").classList.add("hidden");
+            document.getElementById("heading21").classList.remove("hidden");
+            document.getElementById("heading22").classList.remove("hidden");
+            document.getElementById("heading31").classList.add("hidden");
+            document.getElementById("heading32").classList.add("hidden");
+            document.getElementById("heading41").classList.add("hidden");
+            document.getElementById("heading42").classList.add("hidden");
+            document.getElementById("heading51").classList.add("hidden");
+            document.getElementById("heading52").classList.add("hidden");
+            document.getElementById("heading61").classList.add("hidden");
+            document.getElementById("heading62").classList.add("hidden");
+        }
+        function views2(){
+            document.querySelector('#Embed_Video > iframe').src=`https://www.youtube.com/embed/Dyxo6gPArP4`;
+            document.getElementById("heading11").classList.add("hidden");
+            document.getElementById("heading12").classList.add("hidden");
+            document.getElementById("heading01").classList.add("hidden");
+            document.getElementById("heading02").classList.add("hidden");
+            document.getElementById("heading21").classList.add("hidden");
+            document.getElementById("heading22").classList.add("hidden");
+            document.getElementById("heading31").classList.remove("hidden");
+            document.getElementById("heading32").classList.remove("hidden");
+            document.getElementById("heading41").classList.add("hidden");
+            document.getElementById("heading42").classList.add("hidden");
+            document.getElementById("heading51").classList.add("hidden");
+            document.getElementById("heading52").classList.add("hidden");
+            document.getElementById("heading61").classList.add("hidden");
+            document.getElementById("heading62").classList.add("hidden");
+        }
+        function views3(){
+            document.querySelector('#Embed_Video > iframe').src=`https://www.youtube.com/embed/vKQi3bBA1y8`;
+            document.getElementById("heading11").classList.add("hidden");
+            document.getElementById("heading12").classList.add("hidden");
+            document.getElementById("heading01").classList.add("hidden");
+            document.getElementById("heading02").classList.add("hidden");
+            document.getElementById("heading21").classList.add("hidden");
+            document.getElementById("heading22").classList.add("hidden");
+            document.getElementById("heading31").classList.add("hidden");
+            document.getElementById("heading32").classList.add("hidden");
+            document.getElementById("heading41").classList.remove("hidden");
+            document.getElementById("heading42").classList.remove("hidden");
+            document.getElementById("heading51").classList.add("hidden");
+            document.getElementById("heading52").classList.add("hidden");
+            document.getElementById("heading61").classList.add("hidden");
+            document.getElementById("heading62").classList.add("hidden");
+        }
+        function views4(){
+            document.querySelector('#Embed_Video > iframe').src=`https://www.youtube.com/embed/kYzz0FSgpSU`;
+            document.getElementById("heading11").classList.add("hidden");
+            document.getElementById("heading12").classList.add("hidden");
+            document.getElementById("heading01").classList.add("hidden");
+            document.getElementById("heading02").classList.add("hidden");
+            document.getElementById("heading21").classList.add("hidden");
+            document.getElementById("heading22").classList.add("hidden");
+            document.getElementById("heading31").classList.add("hidden");
+            document.getElementById("heading32").classList.add("hidden");
+            document.getElementById("heading41").classList.add("hidden");
+            document.getElementById("heading42").classList.add("hidden");
+            document.getElementById("heading51").classList.remove("hidden");
+            document.getElementById("heading52").classList.remove("hidden");
+            document.getElementById("heading61").classList.add("hidden");
+            document.getElementById("heading62").classList.add("hidden");
+        }
+        function views5(){
+            document.querySelector('#Embed_Video > iframe').src=`https://www.youtube.com/embed/hMbexEPAOQI`;
+            document.getElementById("heading11").classList.add("hidden");
+            document.getElementById("heading12").classList.add("hidden");
+            document.getElementById("heading01").classList.add("hidden");
+            document.getElementById("heading02").classList.add("hidden");
+            document.getElementById("heading21").classList.add("hidden");
+            document.getElementById("heading22").classList.add("hidden");
+            document.getElementById("heading31").classList.add("hidden");
+            document.getElementById("heading32").classList.add("hidden");
+            document.getElementById("heading41").classList.add("hidden");
+            document.getElementById("heading42").classList.add("hidden");
+            document.getElementById("heading51").classList.add("hidden");
+            document.getElementById("heading52").classList.add("hidden");
+            document.getElementById("heading61").classList.remove("hidden");
+            document.getElementById("heading62").classList.remove("hidden");
+        }
+    </script>
+</html>
