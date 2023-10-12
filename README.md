@@ -4,7 +4,7 @@ Languages: HTML, CSS, Javascript, Java, C.<br>
 
 << Java >><br>
 Assignment1.1: Create a magic box (more information inside the code with comments) with Java.<br>
-Assignment1.1: Draw letter H (more information inside the code with comments) with Java.<br>
+Assignment1.2: Draw letter H (more information inside the code with comments) with Java.<br>
 
 << HTML, CSS, Javascript >><br>
 Assignment2.1: A simple online CV with HTML, CSS.<br>
