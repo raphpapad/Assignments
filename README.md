@@ -14,4 +14,4 @@ Assignment9: Very Simple YouTube Web page.<br>
 
 << C >><br>
 Assignment8: A programm that translates Greek letters to Enligsh more info inside the program.<br>
-Assignment10: A simple C program, more info inside the code.<br> 
+Assignment10: Very simple C program, more info inside the code.<br> 
