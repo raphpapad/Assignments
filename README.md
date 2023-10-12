@@ -11,3 +11,4 @@ Assignment6: The board game Connect 4 with HTML, CSS, Javascript.<br>
 Assignment7: The board game Tic Tac Toe with HTML, CSS, Javascript.<br>
 Assignment8: A programm that translates Greek letters to Enligsh more info inside the program, written in C.<br>
 Assignment9: Very Simple YouTube Web page with, HTML, CSS, Javascript.<br>
+Assignment10: A simple C program, more info inside the code.<br> 
