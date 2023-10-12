@@ -1,5 +1,4 @@
 /*
-
 << Description >>
 Write a C program that reads integers from a file (one number per line) and finds and 
 prints the number that occurs the fewest times and the number that occurs the most 
@@ -8,7 +7,6 @@ range [0, 100] and that the file will not contain more than 100 numbers.
 
 << Author >>
 Raphael Papadakis
-
 */
 
 #include <stdio.h>
