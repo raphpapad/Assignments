@@ -5,7 +5,7 @@ Assignment4: Create a magic box (more information inside the code with comments)
 Assignment5: Draw letter H (more information inside the code with comments).<br>
 
 << HTML, CSS, Javascript >><br>
-Assignment1: A simple online CV with HTML, CSS.<br>
+Assignment1: A simple online CV.<br>
 Assignment2: A registration forum for an online library.<br>
 Assignment3: The board game Snakes and Ladders.<br>
 Assignment6: The board game Connect 4.<br>
