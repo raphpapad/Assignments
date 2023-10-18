@@ -3,6 +3,7 @@
 << Java >><br>
 Assignment4: Create a magic box (more information inside the code with comments).<br>
 Assignment5: Draw letter H (more information inside the code with comments).<br>
+Assignment11: Ping Pong numbers with music (more information inside the code with comments).<br>
 
 << HTML, CSS, Javascript >><br>
 Assignment1: A simple online CV.<br>
