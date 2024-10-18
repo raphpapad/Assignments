@@ -14,7 +14,6 @@ import java.awt.geom.Line2D;
 import java.awt.geom.QuadCurve2D;
 
 /*
- * " HY252 2019 Assignment 1 "
  * 
  * Draw letter H with different ways.
  * 
